@@ -5,12 +5,25 @@ project "FastNoise2"
 	targetdir ("bin/" .. outputdir .. "/%{prj.name}")
 	objdir ("bin-int/" .. outputdir .. "/%{prj.name}")
 
-	files {}
-
+	files {
+		"src/FastNoise/**.h",
+		"src/FastNoise/**.cpp",
+		
+		"src/FastSIMD/Internal/**.h",
+		"src/FastSIMD/Example/Example.h",
+		"src/FastSIMD/**.cpp",
+	}
+	
+	includedirs
+    {
+        "include"
+    }
+		
 	filter "system:windows"
 		systemversion "latest"
 		cppdialect "C++17"
 		staticruntime "On"
+		defines { "FASTNOISE_EXPORT" }
 
 	filter "system:linux"
 		pic "On"
@@ -25,3 +38,6 @@ project "FastNoise2"
 	filter "configurations:Release"
 		runtime "Release"
 		optimize "on"
+
+	filter "action:vs*"
+		buildoptions { "/arch:AVX512" }

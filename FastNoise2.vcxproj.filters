@@ -1,0 +1,84 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="FastNoise">
+      <UniqueIdentifier>{11F1D6F9-7D5B-8B70-C699-3C16324369C5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="FastSIMD">
+      <UniqueIdentifier>{A0A32755-8C70-8260-B589-7008A1B5B7EE}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="FastSIMD\Example">
+      <UniqueIdentifier>{5BBD6DD4-47B6-8C26-70E8-71AB5C406C32}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="FastSIMD\Internal">
+      <UniqueIdentifier>{CCBD283D-38D4-26D3-814B-B2F4EDA0F75A}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="src\FastNoise\Base64.h">
+      <Filter>FastNoise</Filter>
+    </ClInclude>
+    <ClInclude Include="src\FastSIMD\Example\Example.h">
+      <Filter>FastSIMD\Example</Filter>
+    </ClInclude>
+    <ClInclude Include="src\FastSIMD\Internal\AVX.h">
+      <Filter>FastSIMD\Internal</Filter>
+    </ClInclude>
+    <ClInclude Include="src\FastSIMD\Internal\AVX512.h">
+      <Filter>FastSIMD\Internal</Filter>
+    </ClInclude>
+    <ClInclude Include="src\FastSIMD\Internal\NEON.h">
+      <Filter>FastSIMD\Internal</Filter>
+    </ClInclude>
+    <ClInclude Include="src\FastSIMD\Internal\SSE.h">
+      <Filter>FastSIMD\Internal</Filter>
+    </ClInclude>
+    <ClInclude Include="src\FastSIMD\Internal\Scalar.h">
+      <Filter>FastSIMD\Internal</Filter>
+    </ClInclude>
+    <ClInclude Include="src\FastSIMD\Internal\VecTools.h">
+      <Filter>FastSIMD\Internal</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="src\FastNoise\FastNoise_C.cpp">
+      <Filter>FastNoise</Filter>
+    </ClCompile>
+    <ClCompile Include="src\FastNoise\Metadata.cpp">
+      <Filter>FastNoise</Filter>
+    </ClCompile>
+    <ClCompile Include="src\FastNoise\SmartNode.cpp">
+      <Filter>FastNoise</Filter>
+    </ClCompile>
+    <ClCompile Include="src\FastSIMD\FastSIMD.cpp">
+      <Filter>FastSIMD</Filter>
+    </ClCompile>
+    <ClCompile Include="src\FastSIMD\FastSIMD_Level_AVX2.cpp">
+      <Filter>FastSIMD</Filter>
+    </ClCompile>
+    <ClCompile Include="src\FastSIMD\FastSIMD_Level_AVX512.cpp">
+      <Filter>FastSIMD</Filter>
+    </ClCompile>
+    <ClCompile Include="src\FastSIMD\FastSIMD_Level_NEON.cpp">
+      <Filter>FastSIMD</Filter>
+    </ClCompile>
+    <ClCompile Include="src\FastSIMD\FastSIMD_Level_SSE2.cpp">
+      <Filter>FastSIMD</Filter>
+    </ClCompile>
+    <ClCompile Include="src\FastSIMD\FastSIMD_Level_SSE3.cpp">
+      <Filter>FastSIMD</Filter>
+    </ClCompile>
+    <ClCompile Include="src\FastSIMD\FastSIMD_Level_SSE41.cpp">
+      <Filter>FastSIMD</Filter>
+    </ClCompile>
+    <ClCompile Include="src\FastSIMD\FastSIMD_Level_SSE42.cpp">
+      <Filter>FastSIMD</Filter>
+    </ClCompile>
+    <ClCompile Include="src\FastSIMD\FastSIMD_Level_SSSE3.cpp">
+      <Filter>FastSIMD</Filter>
+    </ClCompile>
+    <ClCompile Include="src\FastSIMD\FastSIMD_Level_Scalar.cpp">
+      <Filter>FastSIMD</Filter>
+    </ClCompile>
+  </ItemGroup>
+</Project>
